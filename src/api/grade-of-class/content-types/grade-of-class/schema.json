@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "grade_of_classes",
+  "info": {
+    "singularName": "grade-of-class",
+    "pluralName": "grade-of-classes",
+    "displayName": "Grade of Class",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "grade": {
+      "type": "integer",
+      "max": 12,
+      "min": 1,
+      "private": true
+    },
+    "grade_of_school": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::grade-of-school.grade-of-school"
+    }
+  }
+}

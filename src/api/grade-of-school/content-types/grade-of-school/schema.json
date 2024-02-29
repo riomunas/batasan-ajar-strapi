@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "grade_of_schools",
+  "info": {
+    "singularName": "grade-of-school",
+    "pluralName": "grade-of-schools",
+    "displayName": "Grade Of School"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "grade": {
+      "type": "string"
+    }
+  }
+}
