@@ -1,7 +1,7 @@
 module.exports = ({ env }) => ({
   host: env('HOST', '0.0.0.0'),
   port: env.int('PORT', 1337),
-  url: 'https://mentally-selected-cattle.ngrok-free.app/',
+  url: env('URL', 'https://mentally-selected-cattle.ngrok-free.app/'),
   app: {
     keys: env.array('APP_KEYS'),
   },
